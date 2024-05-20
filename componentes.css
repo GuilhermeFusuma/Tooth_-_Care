@@ -94,3 +94,9 @@ footer .container-below .line {
     background: #769B9A;
 }
 
+.container-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    /* outline: 1px red solid; */
+}
