@@ -10,10 +10,12 @@ section {
 }
 
 #bemvindo {
+    /* outline: 3px solid orange; */
     display: flex;
     position: relative;
     width: 99vw;
-    gap: 25%;
+    justify-content: space-between;
+    padding: 0.5% 2%;
 }
 #bemvindo::after {
     content: '';
@@ -40,8 +42,150 @@ section {
     border: none;
     font-size: 1.4rem;
     border-radius: 50px;
+    background: #004945;
+    color: white;
+    align-self: center;
 }
 #bemvindo img {
-    width: 35%;
+    height: 500px;   
+}
+
+#segunda-secao {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#segunda-secao .avaliacoes {
+    width: 90vw;
+    height: 450px;
+    display: flex;
+    overflow-x: scroll;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+#segunda-secao .container {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    outline: 3px solid red;
+    
+}
+#segunda-secao .cards {
+    width: 400px;
+    height: 300px;
+    background-color: rgb(150, 150, 150);
+    outline: 1px solid orange;
+}
+
+#terceira-secao {
+    position: relative;
+    height: 400px;
+    width: 80vw;
+    display: flex;
+    gap: 5px;
+    padding: 14px;
+}
+#terceira-secao::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    background: #58d3cd48;
+    z-index: -1;
+}
+
+#terceira-secao .container-texto {
+    padding: 3% 10%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 1.5rem; 
+
+    h1 {
+        margin-bottom: 10%;
+    }
+}
+#terceira-secao button {
+    border: none;
+    background: #004945;
+    color: white;
+    border-radius: 20px;
+}
+
+#terceira-secao #masp {
+    position: absolute;
+    height:10%;
+    right: 10%;
+    top: 5%;
+}
+
+#quarta-secao {
+    position: relative;
+    height: 800px;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    outline: 4px solid orange;
+}
+#quarta-secao::after {
+    content: '';
+    position: absolute;
+    height: 580px;
+    inset: 0;
+    z-index: -1;
+    background: #216966;
+}
+
+#quarta-secao .container-cards {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#quarta-secao .container-cards .cards {
+    width: 370px;
+    background: #374948;
+    border-radius: 40px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-inline: 2%;
+    padding-bottom: 3%;
+    overflow: hidden;
+}
+#quarta-secao .container-cards .cards img {
+    width: 122%;
+    margin-bottom: 10%
+}
+#quarta-secao .container-cards .cards button {
+    border: none;
+    border-radius: 40px;
+    width: 90px;
+    color: white;
+    background: #58D3CD;
     justify-self: flex-end;
+    margin: 0;
+}
+
+#quinta-secao {
+    padding-inline: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#quinta-secao div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+#quinta-secao:nth-child(1) {
+    grid-row: 2;
 }
