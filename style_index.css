@@ -47,7 +47,7 @@ section {
     align-self: center;
 }
 #bemvindo img {
-    height: 500px;   
+    height: 40%;   
 }
 
 #segunda-secao {
@@ -55,6 +55,13 @@ section {
     flex-flow: column;
     align-items: center;
     gap: 20px;
+    height: 50vh;
+}
+
+#segunda-secao .seta {
+    width: 30px;
+    height: 30px;
+    background: rgba(184, 184, 184, 0.342);
 }
 
 #segunda-secao .avaliacoes {
@@ -65,20 +72,22 @@ section {
     align-items: center;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 #segunda-secao .container {
+    outline: 4px red solid;
     min-width: 100%;
+    z-index: 4;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10%;
-    outline: 3px solid red;
-    
+    padding: 20px;
 }
 #segunda-secao .cards {
     width: 400px;
     height: 300px;
     background-color: rgb(150, 150, 150);
-    outline: 1px solid orange;
 }
 
 #terceira-secao {
@@ -132,12 +141,11 @@ section {
     display: flex;
     flex-flow: column;
     align-items: center;
-    outline: 4px solid orange;
 }
 #quarta-secao::after {
     content: '';
     position: absolute;
-    height: 580px;
+    height: 620px;
     inset: 0;
     z-index: -1;
     background: #216966;
@@ -146,10 +154,13 @@ section {
 #quarta-secao .container-cards {
     width: 70%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10%;
+    
 }
 #quarta-secao .container-cards .cards {
-    width: 370px;
+    min-width: 370px;
+    max-width: 480px;
     background: #374948;
     border-radius: 40px;
     display: flex;
@@ -185,7 +196,131 @@ section {
     flex-flow: column;
     align-items: center;
     font-size: 1.5rem;
+
+    text-decoration: underline;
 }
-#quinta-secao:nth-child(1) {
-    grid-row: 2;
+#quinta-secao div:nth-child(1) {
+    grid-row-start: 2;
+
+    p:nth-child(1){
+        color: #2C8E89;
+    }
+}
+#quinta-secao div:nth-child(2) {
+    grid-column-start: 2;
+
+    p:nth-child(1){
+        color: #2C8E89;
+    }
+}
+#quinta-secao div:nth-child(3) {
+    grid-row-start: 2;
+    grid-column-start: 3;
+
+    p:nth-child(1){
+        color: #2C8E89;
+    }
+}
+
+#sexta-secao {
+    position: relative;
+    display: flex;
+    padding: 0.5% 6%;
+    height: 500px
+}
+#sexta-secao::after {
+    content: '';
+    inset: 0;
+    z-index: -1;
+    position: absolute;
+    background: #58d3cd48;
+    width: inherit;
+    height: inherit;
+    border-radius: 60px;
+}
+
+#sexta-secao .container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: space-evenly;
+    padding-inline: 10%;
+}
+#sexta-secao .container p {
+    color: rgba(77, 77, 77, 0.822);
+}
+#sexta-secao .container h1 {
+    font-size: 3.5rem;
+}
+#sexta-secao .container button {
+    border: none;
+    color: white;
+    background: #004945;
+    border-radius: 40px;
+    padding-inline: 7px;
+}
+
+#setima-secao {
+    background-image: url(img\ sala.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-inline: 10%;
+    margin: 0;
+    position: relative;
+    margin-block: 5vh;
+}
+
+#setima-secao .container {
+    width: 600px;
+    height: 600px;
+    background: #001c35a4;
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 4%;
+    padding-block: 5%;
+}
+#setima-secao .container h1 {
+    font-size: 2.6rem;
+}
+#setima-secao .container h2 {
+    font-weight: bold;
+}
+#setima-secao .container form {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: center;
+}
+#setima-secao .container form div{
+    width: 270%;
+    display: flex;
+    justify-content: center;
+}
+#setima-secao .container form .text {
+    width: 100%;
+    border-radius: 50px;
+    padding: 2% 5%;
+}
+#setima-secao .container form .text:hover {
+    background-color: rgb(240, 240, 240);
+}
+#setima-secao .container form div:nth-child(4) input {
+    margin-top: 50px;
+    padding: 1% 15%;
+    background-color: #58D3CD;
+    font-size: 2rem;
+    font-weight: bolder;
+    border-radius: 50px;
+    transition: background-color 100ms ease-in;
+}
+#setima-secao .container form div:nth-child(4) input:hover {
+    background-color: #4aaca7;
 }
