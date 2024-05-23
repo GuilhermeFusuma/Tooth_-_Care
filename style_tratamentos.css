@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.imagem {
+    background-image: url(tratamento_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    min-block-size: 800px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7rem;
+}
+.imagem p {
+    z-index: 1;
+}
+.overlay::after {
+    content: '';
+    inset: 0;
+    height: inherit;
+    width: inherit;
+    background: rgba(63, 63, 63, 0.63);
+    position: absolute;
+}
+
+#segunda-secao {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+
+    margin-block: 120px;
+}
+
+#segunda-secao .container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#segunda-secao .cards {
+    width: min-content;
+
+    background: #58D3CD;
+    border-radius: 51px;
+    overflow: hidden;
+    height: 460px;
+}
+
+#segunda-secao p {
+    font-weight: 500;
+    text-align: center;
+    padding: 3% 10%;
+    user-select: none;
+}
+
+#secao-agendamento {
+    background-image: url(agendar_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 36%;
+
+    block-size: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-inline: 40px;
+}
+
+#secao-agendamento .container {
+    background: #001c35a8;
+    width: 550px;
+    block-size: 600px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 27%;
+    color: white;
+    font-size: 140%;
+}
+
+#secao-agendamento button{
+    border: none;
+    border-radius: 40px;
+    background: #58D3CD;
+    color: white;
+    padding-inline: 15px;
+    scale: 250%
+}
