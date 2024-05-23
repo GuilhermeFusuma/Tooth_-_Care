@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contato </title>
-    <link rel="stylesheet" href="Contato.css">
+    <title> Tooth & Care </title>
     <link rel="stylesheet" href="componentes.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="cadastre-se.css">
 </head>
 <body>
     <header>
@@ -36,63 +35,55 @@
         </div>
     </header>
     <section>
-        <div class="container">
-            <img src="contato-imagens/contato_img.png" alt="" id="img_contato">
-            <div id="sombra"></div>
-            <div id="titulo"> Entre em Contato </div>
-            <div class="informacoes">
-                <div class="icones">
-                    <img src="contato-imagens/endereço_img.png" alt=""> 
-                    <img src="contato-imagens/telefone_img.png" alt="">
-                    <img src="contato-imagens/whattsapp_img.png" alt="">
-                    <img src="contato-imagens/horario_img.png" alt="">
+        <div class="conteudo">
+            <img src="cadastro-imagens/cadastre-se_img.png" id="img" alt="">
+            <div class="sombra"></div>
+            <div class="cadastro">
+                <div class="logo-retangulo">
+                    <img src="cadastro-imagens/logo.png" alt="">
                 </div>
-                <div class="linhas">
-                    <div id="linha1"></div>
-                    <div id="linha2"></div>
-                    <div id="linha3"></div> 
-                </div>
-                <div class="dados">
-                    <div id="endereco"> Avenida Paulista, 999 Jardins, <br> São Paulo - SP, <br> 01411-000 </div>
-                    <div id="telefone"> (11) 55546-8672 </div>
-                    <div id="whatsapp"> (11) 94002-8922 </div>
-                    <div id="horario" > Seg a Sex </div>
-                    <br>
-                    <div id="horario" > 08:00 - 18:00 </div>
-                </div>
+                <form action="" class="formulario">
+                    <div class="login">
+                        <div id="login"> LOGIN </div>
+                        <div class="rotulos">
+                            <label for="e-mail"></label>
+                            <input type="e-mail" placeholder="E-mail" id="login_e-mail">
+                        </div>
+                        <div class="rotulos">
+                            <label for="senha"></label>
+                            <input type="text" id="login_senha" placeholder="Senha">
+                        </div>
+                        <div class="legenda">
+                            <div class="cadastre-se"> Não possui conta? <a href=""> cadastre-se </a></div>
+                            <div class="esqueci"><a href=""> Esqueci minha senha? </a></div>
+                        </div>
+                        <div class="botao_a">
+                            <a href="">
+                                <div class="botao"> Entrar </div>
+                            </a>
+                        </div>
+                        <div class="botao_b">
+                            <div class="logar_com"><strong> Logar com: </strong></div>
+                        </div>
+                        <div class="logar_com_a">
+                            <div class="botao_b">
+                                <div class="google">
+                                    <a href=""><img src="cadastro-imagens/google.png" alt=""></a>
+                                </div>
+                                <div class="apple">
+                                    <a href=""><img src="cadastro-imagens/apple.png" alt=""></a>
+                                </div>
+                                <div class="facebook">
+                                    <a href=""><img src="cadastro-imagens/facebook.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-        
-
     </section>
     <section>
-    <div class="paulista">
-            <img src="contato-imagens/paulista_img.png" alt="" id="paulista">
-            <div class="sombra1"></div>
-        <div class="quadrados">
-            <div class="quadrados" id="quadrado1">
-                <div class="localizado"> Localizado na privilegiada avenida paulista </div>
-                <div class="rua"> Avenida Paulista, 999 Jardins, <br> São Paulo - SP, 01411-000 </div>
-                <div class="mapa1">
-                    <a href="https://maps.app.goo.gl/bA3xFELTdhUVgnMg8" id="mapa1">
-                       <img src="contato-imagens/image 14mapa_ contato_img.png" id="mapa1" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="quadrados" id="quadrado2">
-                <div id="agendar"> Agendar consulta </div>
-                <div class="retang1" id="retangulo3"> entre em contato no telefone abaixo para agendar a sua </div>
-                <div class="retang1" id="retangulo4"> contato </div>
-                <div class="retang" id="retangulo1"> Ligar agora: (11) 55546-8672 </div>            
-                <div class="retang" id="retangulo2"> Agende via whatsapp </div>
-            </div>
-        </div>
-        </div>
-
-    </div>
-    </section>
-
-    <section class="fim">
         <footer>
             <img class="logo" src="tooth & care logo.png" alt="">
             <div class="container-above">
@@ -100,7 +91,7 @@
                     <h3>Sobre:</h3>
                     <div class="line"></div>
                     <a href="">Nosso espaço</a>
-                    <a href="quemsomos.html">Quem somos</a>
+                    <a href="">Quem somos</a>
                 </div>
                 <div class="box contato">
                     <h3>Contato:</h3>
@@ -136,6 +127,5 @@
             </div>
         </footer>
     </section>
-    
 </body>
 </html>

@@ -4,7 +4,7 @@
 }
 
 .imagem {
-    background-image: url(tratamento_img.png);
+    background-image: url(tratamentos-imagens/tratamento_img.png);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -59,7 +59,7 @@
 }
 
 #secao-agendamento {
-    background-image: url(agendar_img.jpg);
+    background-image: url(tratamentos-imagens/agendar_img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 36%;
