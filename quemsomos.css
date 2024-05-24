@@ -5,30 +5,15 @@ body{
     background: linear-gradient( #9DF5D0, #E5FFFF );
 }    
 
-#visao{
-    width: 450px;
-    height: 500px;
+
+.informacoes {
+    width: 400px;
+    height: fit-content;
+    min-height: 600px;
     border-radius: 20%;
     background-color: #33A8A2;
-    margin: 10px;
     color: white;
-}
-#missao{
-    width: 450px;
-    height: 500px;
-    border-radius: 20%;
-    background-color: #33A8A2;
-   margin: 10px;
-   color: white;
-}
-#valores{
-    width: 450px;
-    height: 500px;
-    border-radius: 20%;
-    background-color: #33A8A2;
-    text-align: center;
-    margin: 10px;
-    color: white;
+    padding-inline: 3%;
 }
 .faixa{
     height: 400px;
@@ -42,9 +27,19 @@ body{
     align-items: center;
     margin: 100px 0px 0px 0px;
 }
+.faixa .texto {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-left: 10vh;
+}
+.faixa h4 {
+    font-size: 2rem;
+}
 .quadrado{
    display: flex;
    justify-content: space-around;
+   gap: 2px;
    align-items: center;
    text-align: center;
    height: 1000px;
@@ -56,18 +51,23 @@ body{
     display: flex;
 }
 .imagemfundo{
+    background-image: url(quem_somos-imagens/quemsomos_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-block-size: 50vh;
     font-size: 3rem;
-     position: absolute;
+    position: relative;
     color: white;
-    
-}
-.imagemfundo img{
     display: flex;
-    width: 100vw;
-    height: 470px;
+    justify-content: center;
+    align-items: center;
+}
+.imagemfundo h3 {
+    z-index: 1;
 }
 .imagemfundo::after{
-    content:'';
+    content: '';
     position: absolute;
     height: inherit;
     width: inherit;

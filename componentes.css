@@ -101,3 +101,76 @@ footer .container-below .line {
     gap: 10px;
     /* outline: 1px red solid; */
 }
+
+/* barra lateral adm */
+.container-adm {
+    inline-size: 20vw;
+    min-inline-size: fit-content;
+    height: 100vh;
+    background: #00B6AB;
+    padding-inline: 1%;
+    display: flex;
+    flex-flow: column;
+    gap: 5%;
+    color: white;
+    font-size: 1.5rem;
+    position: fixed;
+}
+.container-adm a {
+    text-decoration: none;
+    color: white;
+}
+
+.container-adm * {
+    display: flex;
+    align-items: center;
+}
+
+.container-adm #linha {
+    height: 1px;
+    width: 100%;
+    background: white;
+}
+
+.container-adm .container-paginas {
+    height: 45vh;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.container-adm .circulo {
+    height: fit-content;
+    padding: 2%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #2BCCC4;
+}
+.container-adm .pagina {
+    gap: 5%;
+}
+
+
+/* conteúdo adm */
+.conteudo-adm {
+    margin-left: 22vw;
+    width: 78vw;
+    height: 100vh;
+    background-image: url(adm\ imagens/imagem-adm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+}
+.conteudo-adm::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: rgba(0, 0, 0, 0.404);
+    inset: 0;
+    z-index: -1;
+}

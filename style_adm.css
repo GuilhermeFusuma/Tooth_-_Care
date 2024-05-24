@@ -1,0 +1,12 @@
+.placeholder {
+    width: 70%;
+    height: 85%;
+    background: rgb(245, 245, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.placeholder p {
+    font-size: 3rem;
+    color: gray;
+}
