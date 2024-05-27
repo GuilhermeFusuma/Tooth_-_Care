@@ -1,0 +1,45 @@
+.conteudo-adm .wraper {
+    width: fit-content;
+    height: 80%;
+    padding: 2%;
+    background: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.conteudo-adm a {
+    text-decoration: none;
+    width: 100%;
+    min-height: fit-content;
+    margin-block: 1%;
+    z-index: 5;
+}
+
+.conteudo-adm .paciente {
+    background: #D8F4EB;
+    padding: 2rem 6rem;
+    border-radius: 20px;
+    display: flex;
+    gap: 2rem;
+    color: black;
+    font-weight: 570;
+    border: none;
+
+}
+.conteudo-adm p {
+    text-align: left;
+    font-size: 1rem;
+    /* user-select: none; */
+}
+.conteudo-adm p:nth-child(1) {
+    font-weight: bold;
+}
+
+@media (max-width: 996px) {
+    .conteudo-adm .paciente {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
