@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adm/paciente3</title>
+    <link rel="stylesheet" href="componentes.css">
+    <link rel="stylesheet" href="style_adm-paciente-detalhes.css">
+</head>
+<body>
+    <section class="adm">
+        <!-- barra lateral do adm -->
+        <div class="container-adm">
+            <div id="data">
+                <img src="adm imagens/calendário.png" alt="">
+                <p>03/03/2024</p>
+            </div>
+            <div id="horario">
+                <img src="adm imagens/relogio.png" alt="">
+                <time datetime="">18 : 30 : 25</time>
+            </div>
+            <div id="linha"></div>
+            <div class="container-paginas">
+                <a href="adm-pacientes.html">
+                    <div class="pagina paciente">
+                        <div class="circulo">
+                            <img src="adm imagens/pacientes.png" alt="">
+                        </div>
+                        <p>Pacientes</p>
+                    </div>
+                </a>
+                <a href="adm-medicos.html">
+                    <div class="pagina medico">
+                        <div class="circulo">
+                            <img src="adm imagens/doutor.png" alt="">
+                        </div>
+                        <p>Médicos</p>
+                    </div>
+                </a>
+                <a href="adm-agendamentos.html">
+                    <div class="pagina agendamento">
+                        <div class="circulo">
+                            <img src="adm imagens/calendário.png" alt="">
+                        </div>
+                        <p>Agendamentos</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- conteúdo do adm -->
+        <div class="conteudo-adm">
+            <div class="wraper">
+                <a href="adm-pacientes.html" class="back">
+                    <img src="pacientes-detalhes/back.png" alt="">
+                </a>
+                <label for="rotulo">Paciente:</label>
+                <div class="container-paciente">
+                    <div id="imagem">
+                        <img src="pacientes-detalhes/perfil.png" alt="">
+                    </div>
+                    <p>Nome: Ana Carolina Souza Lima</p>
+                    <p>Idade: 36</p>
+                    <p>Data de nascimento: 03/02/1988</p>
+                    <p>CPF: 234.365.645-76</p>
+                    <p>Celular: (11) 55526-8462</p>
+                </div>
+                <label for="rotulo">Agendamento:</label>
+                <div class="container-agendamento">
+                    <p>Data: 30/03/2024</p>
+                    <p>Hora: 15:00</p>
+                    <p>
+                        Local:
+                        <br> Avenida Paulista, 999 Jardins, São Paulo-SP, 014411-000
+                    </p>
+                    <p>
+                        Médico Responsável:
+                        <br> Nome: Dr. Guilherme Alencar
+                    </p>
+                    <p>Serviço: Endontia</p>
+                </div>
+            </div>
+        </div>  
+    </section>
+</body>
+</html>

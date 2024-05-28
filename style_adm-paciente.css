@@ -22,11 +22,10 @@
     padding: 2rem 6rem;
     border-radius: 20px;
     display: flex;
-    gap: 2rem;
+    gap: 7rem;
     color: black;
     font-weight: 570;
     border: none;
-
 }
 .conteudo-adm p {
     text-align: left;
@@ -35,6 +34,9 @@
 }
 .conteudo-adm p:nth-child(1) {
     font-weight: bold;
+}
+.conteudo-adm .paciente:hover {
+    background: #c6e4db;
 }
 
 @media (max-width: 996px) {

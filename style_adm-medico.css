@@ -4,6 +4,8 @@
     width: 50%;
     padding: 3%;
     background: white;
+    position: relative;
+    overflow-y: scroll;
 }
 .conteudo-adm .medico {
     color: black;
@@ -38,6 +40,9 @@
     display: flex;
     gap: 0.7rem;
 }
+#remover_medico:hover {
+    background: #0d8f8d;
+}
 #icone-x {
     position: relative;
     width: 25px;
@@ -60,4 +65,40 @@
     background: white;
     rotate: -45deg;
     translate: 0 500%;
+}
+
+#adicionar-medico {
+    position: fixed;
+    width: fit-content;
+    padding: 7px 20px;
+    background: #0FA8A6;
+    border-radius: 50px;
+    color: white;
+    text-wrap: nowrap;
+    display: flex;
+    gap: 5%;
+    bottom: 7%;
+}
+#adicionar-medico:hover {
+    background: #0d9693;
+}
+#plus {
+    width: 30px;
+    position: relative;
+}
+#plus::after {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 3px;
+    background: white;
+    translate: 0 330%;
+}
+#plus::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 26px;
+    background: white;
+    translate: 400% -6%;
 }
