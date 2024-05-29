@@ -5,8 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>adm-adicionar-médico</title>
     <link rel="stylesheet" href="componentes.css">
+    <link rel="stylesheet" href="style_adicionar-medico.css">
 </head>
 <body>
-    
+    <section class="adm">
+        <!-- barra lateral do adm -->
+        <div class="container-adm">
+            <div id="data">
+                <img src="adm imagens/calendário.png" alt="">
+                <p>03/03/2024</p>
+            </div>
+            <div id="horario">
+                <img src="adm imagens/relogio.png" alt="">
+                <time datetime="">18 : 30 : 25</time>
+            </div>
+            <div id="linha"></div>
+            <div class="container-paginas">
+                <a href="adm-pacientes.html">
+                    <div class="pagina paciente">
+                        <div class="circulo">
+                            <img src="adm imagens/pacientes.png" alt="">
+                        </div>
+                        <p>Pacientes</p>
+                    </div>
+                </a>
+                <a href="adm-medicos.html">
+                    <div class="pagina medico">
+                        <div class="circulo">
+                            <img src="adm imagens/doutor.png" alt="">
+                        </div>
+                        <p>Médicos</p>
+                    </div>
+                </a>
+                <a href="adm-agendamentos.html">
+                    <div class="pagina agendamento">
+                        <div class="circulo">
+                            <img src="adm imagens/calendário.png" alt="">
+                        </div>
+                        <p>Agendamentos</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- conteúdo do adm -->
+        <div class="conteudo-adm">
+            <div class="wraper">
+                <h1>Novo Médico</h1>
+                <form action="">
+                    <input type="text" class="text" placeholder="Nome Completo">
+                    <input type="text" class="text" placeholder="CPF">
+                    <input type="text" class="text" placeholder="E-mail">
+                    <input type="text" class="text" placeholder="Login">
+                    <input type="text" class="text" placeholder="Senha">
+                    <input type="text" class="text" placeholder="Salário">
+                    <label for="selecao" class="caixa-itens">
+                        <input type="checkbox" id="caixa-profissao">
+                        <div id="default">
+                            <p>Escolha uma profissão</p>
+                            <img src="adicionar-medicos/arrow.svg" alt="">
+                        </div>
+                        <div id="clicked">
+                            <label for="profissoes" class="profissao-selecionada">
+                                <input type="checkbox">
+                                <div class="profissao">
+                                    <p>clínico Geral</p>
+                                </div>
+                            </label>
+                            <div class="profissao">
+                                <p>Cirurgião</p>
+                            </div>
+                            <div class="profissao">
+                                <p>Periodontia</p>
+                            </div>
+                            <div class="profissao">
+                                <p>Ortodontia</p>
+                            </div>
+                            <div class="profissao">
+                                <p>Odonto Pediatria</p>
+                            </div>
+                        </div>
+                    </label>
+                </form>
+                <a href="adm-medicos.html">
+                    <p>salvar</p>
+                </a>
+            </div>
+        </div>  
+    </section>
 </body>
 </html>
