@@ -55,7 +55,6 @@ section {
     flex-flow: column;
     align-items: center;
     gap: 20px;
-    height: 50vh;
 }
 
 #segunda-secao .seta {
@@ -70,7 +69,6 @@ section {
 
 #segunda-secao .avaliacoes {
     width: 90vw;
-    height: 50vh;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -81,12 +79,12 @@ section {
 }
 #segunda-secao .container {
     min-width: 100%;
-    height: 60vh;
+    max-height: 60vh;
     z-index: 4;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 4%;
     padding: 20px;
 }
 #segunda-secao .cards {
@@ -140,7 +138,7 @@ section {
 #terceira-secao {
     position: relative;
     height: fit-content;
-    width: 80vw;
+    min-width:fit-content;
     display: flex;
     gap: 5px;
     padding: 14px;
@@ -153,6 +151,10 @@ section {
     border-radius: 40px;
     background: #58d3cd48;
     z-index: -1;
+}
+
+#terceira-secao img {
+
 }
 
 #terceira-secao .container-texto {
@@ -171,13 +173,6 @@ section {
     background: #004945;
     color: white;
     border-radius: 20px;
-}
-
-#terceira-secao #masp {
-    position: absolute;
-    height:10%;
-    right: 10%;
-    top: 5%;
 }
 
 #quarta-secao {

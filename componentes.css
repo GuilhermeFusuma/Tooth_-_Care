@@ -21,6 +21,36 @@ header .container {
     margin: 0;
     justify-content: flex-end;
 }
+header .hamburger {
+    position: relative;
+}
+header .hamburger #bar1, #bar2, #bar3 {
+    height: 3px;
+    width: 30px;
+    margin: 7px 0;
+    background-color: white;
+}
+header .hamburger .botoes {
+    position: absolute;
+    translate: -8rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+header .botoes .button {
+    display: flex;
+    align-items: center;
+    width: 10.1rem;
+    padding: 4px;
+    background: #148882;
+    font-size: 1.6rem;
+}
+header .botoes .button:hover {
+    background:#216965
+}
+header .botoes a {
+    text-decoration: none;
+    color: #2BCCC4;
+}
 
 header a {
     text-decoration: none;
@@ -37,7 +67,13 @@ header .container .button:hover {
         transparent,
         rgba(0, 0, 0, 0.288)
     );
-}    
+} 
+
+@media (max-width: 1177px) {
+    header .container {
+        display: none
+    }
+}
 
 /* rodapé */
 footer {
