@@ -1,0 +1,66 @@
+.conteudo-adm {
+    /* cuidado: conteudo também esta usando essa classe */
+    flex-flow: column;
+}
+
+.wraper {
+    position: relative;
+    background: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendario {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+#mes {
+    font-size: 1.4rem;
+}
+#datas {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+#datas > * {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    aspect-ratio: 1;
+}
+.dias-semana {
+    user-select: none;
+}
+.dias {
+    transition: background ease-in 150ms;
+}
+.dias:hover {
+    background: #98E2E1;
+    cursor: pointer;
+}
+
+.botao {
+    position: absolute;
+    align-self: flex-start;
+    text-decoration: none;
+    color: white;
+    translate: 0 770%;
+    background: #00B6AB;
+    border-radius: 40px;
+    padding: 0.4rem;
+
+    traansition: background 250ms ease-in;
+}
+.botao:hover {
+    background: #00a79b;
+}
+.botao * {
+    font-weight: 500;
+}

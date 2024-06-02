@@ -63,7 +63,7 @@ form :nth-child(1) {
 #salvar {
     border: none;
     background: #58D3CD;
-    font-weight: 500;
-    padding-inline: 5%;
+    font-weight: 650;
+    padding: 0.4rem;
     border-radius: 20px;
 }
