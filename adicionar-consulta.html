@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="componentes.css">
-    <link rel="stylesheet" href="style_adicionar-consulta">
+    <link rel="stylesheet" href="style_agendar-consulta.css">
 </head>
 <body>
     
@@ -53,30 +53,97 @@
             <div class="consultas">
                 <div class="pedido">
                     <div class="texto">
-                        <p></p>
-                        <p></p>
+                        <p>Nome:</p>
+                        <p>Marcos Costa Almeida</p>
                     </div>
                     <div class="texto">
-                        <p></p>
-                        <p></p>
+                        <p>Tipo de consulta:</p>
+                        <p>Clareamento dental</p>
                     </div>
                     <div class="texto">
-                        <p></p>
-                        <p></p>
+                        <p>Email:</p>
+                        <p>Marcos.Almeida@gmail.com</p>
                     </div>
-                    <div id="botao">
-                        <label>
-                            <input type="checkbox">
-                        </label>
+                    <label id="botao">
+                        <input type="checkbox">
                         <p>Marcar consulta</p>
-                    </div>
+                    </label>
                 </div>
-                <div class="pedido"></div>
-                <div class="pedido"></div>
+                <div class="pedido">
+                    <div class="texto">
+                        <p>Nome:</p>
+                        <p>Marcos Costa Almeida</p>
+                    </div>
+                    <div class="texto">
+                        <p>Tipo de consulta:</p>
+                        <p>Clareamento dental</p>
+                    </div>
+                    <div class="texto">
+                        <p>Email:</p>
+                        <p>Marcos.Almeida@gmail.com</p>
+                    </div>
+                    <label id="botao">
+                        <input type="checkbox">
+                        <p>Marcar consulta</p>
+                    </label>
+                </div>
+                <div class="pedido">
+                    <div class="texto">
+                        <p>Nome:</p>
+                        <p>Marcos Costa Almeida</p>
+                    </div>
+                    <div class="texto">
+                        <p>Tipo de consulta:</p>
+                        <p>Clareamento dental</p>
+                    </div>
+                    <div class="texto">
+                        <p>Email:</p>
+                        <p>Marcos.Almeida@gmail.com</p>
+                    </div>
+                    <label id="botao">
+                        <input type="checkbox">
+                        <p>Marcar consulta</p>
+                    </label>
+                </div>
             </div>
 
             <div id="detalhes">
+                <label for="paciente">
+                    <h1>Paciente:</h1>
+                    <div class="container-paciente">
+                        <div id="imagem">
+                            <img src="pacientes-detalhes/perfil.png" alt="">
+                        </div>
+                        <p>Nome: Marcos Costa Almeida</p>
+                        <p>CPF: 234.745.756-45</p>
+                        <p>Idade: 28</p>
+                        <p>Data de nascimento: 03/02/1996</p>
+                        <p>Celular: (11) 555736-8567</p>
+                    </div>
+                </label>
+                
+                <label for="consulta">
+                    <h2>Detalhes da Consulta:</h2>
+                    <div id="container-consulta">
+                        <div class="texto">
+                            <p>Serviço:</p>
+                            <p>Clareamento dental</p>
+                        </div>
+                        <div class="texto">
+                            <p>Mensagem:</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius pariatur ab asperiores et repellendus ex saepe blanditiis distinctio commodi cupiditate cum obcaecati libero, earum nesciunt recusandae quasi veritatis, totam vel facilis atque ratione rerum. Odit possimus velit adipisci reiciendis voluptates iure ducimus deleniti sed doloremque, molestiae vel totam non.</p>
+                        </div>
+                        <div class="hora">
+                            <label for="hour">Hora:</label>
+                            <input type="time" class="hour">
+                        </div>
+                        <div class="data">
+                            <label for="date">Data:</label>
+                            <input type="date" class="date">
+                        </div>
 
+                    </div>
+                </label>
             </div>
         </div>  
     </section>
