@@ -30,6 +30,12 @@
 .texto {
     margin-block: 0.3rem;
 }
+.mensagem :nth-child(2) {
+    background: rgb(255, 247, 220);
+    border: 0.05rem solid rgba(0, 0, 0, 0.384);
+    padding: 0.2rem;
+    margin: 0.4rem;
+}
 .pedido label {
     position: relative;
     max-width: fit-content;
@@ -42,13 +48,21 @@
 .pedido input {
     appearance: none;
     position: absolute;
+    inset: 0;   
     width: 100%;
     height: 100%;
     background: red;
     opacity: 0.1;
 }
+.pedido input:checked {
+    background: purple;
+    opacity: 0.8;   
+}
 
+
+/* tela oculta */
 #detalhes {
+    opacity: 0;
     width: 59%;
     height: 80%;
     padding: 0.5rem;
@@ -85,9 +99,29 @@
 }
 
 #container-consulta {
+    --tamanho-container_consulta: 60%;
+
+    position: relative;
     background: #E0FFF5;
-    height: 60%;
+    height: var(--tamanho-container_consulta);
     padding: 0.6rem;
+    /* outline: red solid 2px; */
+}
+
+#form-consulta{ 
+    /* outline: 2px solid rgba(255, 166, 0, 0.541); */
+    display: flex;
+    height: 60%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+.hora,
+.data,
+#entrada {
+    display: flex;
+    flex-flow: column;
+    width: max-content;
 }
 input[type="time"]::-webkit-calendar-picker-indicator {
     display: none;
@@ -96,4 +130,38 @@ input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
+}
+.hour,
+.date,
+#entrada {
+    border: none;
+    background: rgb(250, 249, 223);
+    margin-top: 40%;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    outline: none;
+}
+/* arrumar o margin */
+.date {
+    margin-top: 17%;
+}
+#entrada {
+    margin-top: 29%;
+}
+.entrada :nth-child(1) {
+    font-weight: 600;
+}
+
+.submit {
+    height: fit-content;
+    align-self: flex-end;
+    background: #004945;
+    color: white;
+    border-radius: 5rem;
+    font-size: 1.2rem;
+}
+
+/* clicando em marcar consulta */
+.pedido:has(input:checked) + #detalhes {
+    opacity: 1;
 }

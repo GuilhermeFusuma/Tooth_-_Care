@@ -122,28 +122,39 @@
                     </div>
                 </label>
                 
-                <label for="consulta">
                     <h2>Detalhes da Consulta:</h2>
                     <div id="container-consulta">
                         <div class="texto">
                             <p>Serviço:</p>
                             <p>Clareamento dental</p>
                         </div>
-                        <div class="texto">
+                        <div class="texto mensagem">
                             <p>Mensagem:</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius pariatur ab asperiores et repellendus ex saepe blanditiis distinctio commodi cupiditate cum obcaecati libero, earum nesciunt recusandae quasi veritatis, totam vel facilis atque ratione rerum. Odit possimus velit adipisci reiciendis voluptates iure ducimus deleniti sed doloremque, molestiae vel totam non.</p>
                         </div>
-                        <div class="hora">
-                            <label for="hour">Hora:</label>
-                            <input type="time" class="hour">
-                        </div>
-                        <div class="data">
-                            <label for="date">Data:</label>
-                            <input type="date" class="date">
-                        </div>
-
+                        <form action="adicionar-consulta.html" id="form-consulta">
+                            <div class="entrada hora">
+                                <label for="hour">Hora:</label>
+                                <input type="time" class="hour">
+                            </div>
+                            <div class="entrada data">
+                                <label for="date">Data:</label>
+                                <input type="date" class="date">
+                            </div>
+                            <div class="entrada sala">
+                                <label for="sala">Sala:</label>
+                                <select name="salas" id="entrada">
+                                    <option value="Sala">Sala</option>
+                                    <option value="Sala 1">Sala 1</option>
+                                    <option value="Sala 2">Sala 2</option>
+                                    <option value="Sala 3">Sala 3</option>
+                                    <option value="Sala 4">Sala 4</option>
+                                    <option value="Sala 5">Sala 5</option>
+                                </select>
+                            </div>
+                            <input type="submit" class="submit" value="Salvar consulta">
+                        </form>
                     </div>
-                </label>
             </div>
         </div>  
     </section>
