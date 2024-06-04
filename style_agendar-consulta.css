@@ -7,6 +7,9 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+.consultas h2 {
+    color: #004945;
+}
 /* chrome, safari, opera */
 .consultas::-webkit-scrollbar {
     display: none;
@@ -36,7 +39,7 @@
     padding: 0.2rem;
     margin: 0.4rem;
 }
-.pedido label {
+.pedido #botao {
     position: relative;
     max-width: fit-content;
     align-self: flex-end;
@@ -44,6 +47,7 @@
     color: white;
     padding: 0.125rem;
     border-radius: 1rem;
+    text-decoration: none;
 }
 .pedido input {
     appearance: none;
@@ -62,7 +66,6 @@
 
 /* tela oculta */
 #detalhes {
-    opacity: 0;
     width: 59%;
     height: 80%;
     padding: 0.5rem;
@@ -162,6 +165,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* clicando em marcar consulta */
-.pedido:has(input:checked) + #detalhes {
+.botao:has( input:checked ) + #detalhes {
     opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
 }

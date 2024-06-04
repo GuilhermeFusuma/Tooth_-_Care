@@ -62,7 +62,7 @@
     border-radius: 40px;
     padding: 0.4rem;
 
-    traansition: background 250ms ease-in;
+    transition: background 250ms ease-in;
 }
 .botao:hover {
     background: #00a79b;
