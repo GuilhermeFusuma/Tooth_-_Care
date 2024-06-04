@@ -80,3 +80,19 @@
     rotate: -45deg;
     translate: 0 390%;
 }
+
+#remover-paciente {
+    position: relative;
+}
+#remover-paciente input:hover {
+    cursor: pointer;
+}
+#remover-paciente input {
+    appearance: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#remover-paciente:has(input:checked) + .shadow {
+    display: flex;
+}

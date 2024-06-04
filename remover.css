@@ -1,0 +1,59 @@
+.shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.295);
+}
+.container {
+    --altura-container: 666px;
+    --largura-container: 384px;
+
+    inset: 0;
+    width: var(--altura-container);
+    height: var(--largura-container);
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .img {
+    display: flex;
+    justify-content: center;
+}
+#info {
+    margin: 0px 0px 20px 0px;
+}
+.inf h1 {
+    text-align: center;
+}
+.inf h2 {
+    text-align: center;
+}
+.botoes {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container .botao {
+    margin-top: 20px;
+    font-size: 24px;
+    width: 80px;
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px;
+}
+.botoes a {
+    text-decoration: none;
+}
+#sim {
+    background-color: rgb(109, 175, 54);
+    text-align: center;
+}
+#nao {
+    background-color: rgb(160, 51, 51);
+    text-align: center;
+}
