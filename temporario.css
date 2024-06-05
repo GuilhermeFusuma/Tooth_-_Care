@@ -1,0 +1,30 @@
+section {
+    height: 100vh;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    height: fit-content;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    background: linear-gradient(
+        45deg,
+        #769B9A,
+        #00B6AB
+    );
+    border-radius: 1rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+
+a:hover {
+    background: linear-gradient(
+        45deg,
+        #638180,
+        #009187
+    );
+}

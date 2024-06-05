@@ -143,11 +143,15 @@ footer .container-below .line {
     /* outline: 1px red solid; */
 }
 
+footer .box a:hover {
+    color: rgba(223, 223, 223, 0.726)
+}
+
+/* barra lateral adm */
 .adm {
     display: flex;
 }
 
-/* barra lateral adm */
 .container-adm {
     inline-size: 20vw;
     min-width: fit-content;
