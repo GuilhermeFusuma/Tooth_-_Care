@@ -102,3 +102,18 @@
     background: white;
     translate: 400% -6%;
 }
+
+label {
+    position: relative;
+}
+label input {
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+}
+label:has(input:checked) + .shadow {
+    display: flex;
+    z-index: 3;
+}
