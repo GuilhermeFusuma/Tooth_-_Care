@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+}
+body{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#sair a {
+    width: 6%;
+    height: 6%;
+    border: 2px solid #2C8E89;
+    display: flex;
+    background-color: #2C8E89;
+    position: absolute;
+    border-radius: 500px;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 0 50px;
+    text-decoration: none;
+    color: white;
+}
+#fundo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(image\ 49.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#faixa{
+    width: 99.8%;
+    height: 90%;
+    position: absolute;
+    background: rgb(9,121,114);
+background: linear-gradient(0deg, rgba(9,121,114,0) 31%, rgba(216,244,235,1) 75%);
+    
+}
+
+#info{
+    width: 65%;
+    height: 17%;
+    border: 2px solid #4ad1ca;
+    background-color: #C9F8E9;
+    position: absolute;
+    top: 11%;
+    left: 15%;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    text-decoration-line: underline;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#logo{
+    position: absolute;
+    display: flex;
+    top: 2%;
+    left: 84%;
+    justify-content: center;
+}
+#suasconsultas{
+    width: 60%;
+    height: 55%;
+    position: absolute;
+    border: 2px solid #E2FFF6;
+    top: 40%;
+    left: 6%;
+    background-color: #E2FFF6;
+    border-radius: 3px;
+}
+#agendamento{
+    width: 17%;
+    height: 12%;
+    position: absolute;
+    border: 2px solid #2BCCC4;
+    background-color: #2BCCC4;
+    display: flex;
+    top: 40%;
+    left: 80%;
+    font-size: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
+}
+#clareamento{
+    width: 45%;
+    height: 17%;
+    position: absolute;
+    border: 2px solid #2BCCC4;
+    background-color: #2BCCC4;
+    display: flex;
+    top: 45%;
+    left: 8%;
+    border-radius: 3px;
+    text-decoration-line: underline ;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+#textclare1{
+  font-size: 1.5rem;
+  position: absolute;
+  top: 52.5%;
+  left: 30%;
+  width: 11%;
+}
+#textclare2{
+  font-size: 1.5rem;
+  position: absolute;
+  top: 52.5%;
+  left: 41%;
+  width: 11%;
+}
+#cpf-e-cel{
+    width: 680px;
+    font-size: 1.5rem;
+    text-decoration-line: underline;
+    position: absolute;
+    top: 15.5%;
+    left: 1150px;
+}
+#imglogin{
+    background-image: url(image\ 33.png);
+    background-size: cover;
+  background-repeat: no-repeat;
+    position: absolute;
+    top: 12%;
+    left: 23%;
+    width: 8%;
+    height: 16%;
+} 
+#editar a { 
+    position: absolute;
+    top: 24%;
+    left: 75%;
+    text-decoration: none;
+    color: black;   
+}

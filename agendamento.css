@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+}
+header{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 14vh;
+    background-color: #A4D5D4;
+}
+#fundo{
+    height: 86vh;
+    background: rgb(133,255,249);
+    background: linear-gradient(180deg, rgba(133,255,249,1) 25%, rgba(19,212,203,1) 81%);
+}
+#nome{
+    width: 60%;
+    height: 8%;
+    background-color: #E0FFF5;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0.5%;
+}
+#Telefone{
+    display: flex;
+    width: 60%;
+    height: 8%;
+    background-color: #E0FFF5;
+    position: absolute;
+    top: 31%;
+    left: 2%;
+    font-size: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0.5%;
+}
+#E-mail{
+    display: flex;
+    width: 60%;
+    height: 8%;
+    background-color: #E0FFF5;
+    position: absolute;
+    top: 42%;
+    left: 2%;
+    font-size: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0.5%;
+}
+#Mensagem{
+    display: flex;
+    width: 60%;
+    /* height: 30%; */
+    background-color: #E0FFF5;
+    position: absolute;
+    top: 53%;
+    left: 2%;
+    font-size: 1.5rem;
+    padding-bottom: 13%;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+}
+#agendamento{
+
+    font-size: 3rem;
+}
+#sair{
+    width: 6.5%;
+    height: 50%;
+    background-color: #2C8E89;
+    font-size: 3rem;
+    margin: 0 0 0 30px;
+    border-radius: 50px;
+    text-align: center;
+}
+#sair a {
+    text-decoration: none;
+    color: black;
+}
+#texto1{
+    font-size: 1.8rem;
+    position: absolute;
+    top: 19%;
+    left: 75%;
+    text-align: center;
+}
+#texto2{
+   text-align: center;
+   font-size: 1.8rem;
+   position: absolute;
+   top: 28%;
+   left: 80%;
+}
+#texto3{
+    text-align: center;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 41%;
+    left: 80%;
+ }
+ #selecione{
+    top: 53.5%;
+    left: 76%;
+    position: absolute;
+    display: flex;
+ }
+#consult{
+    background-color: #55e2db;
+    padding: 6% 4%;
+    font-size: 2.2rem;
+    text-align: center;
+    border: none;
+    box-shadow: 0.1rem 0.1rem 0.5rem;
+    outline: none;
+}
+#consult option{
+    margin: 0.1rem;
+    background-color: white;
+    transform: scale(0.7);
+}
+#agendar{
+  width: 20%;
+  padding-block: 1%;
+  background-color: #2C8E89;
+  position: absolute;
+  top: 88%;
+  left: 2%;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+#agendar a {
+    text-decoration: none;
+    color: white;
+}
