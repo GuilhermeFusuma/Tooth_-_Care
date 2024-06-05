@@ -28,6 +28,7 @@ header .container {
 }
 header .hamburger {
     position: relative;
+    display: none
 }
 header .hamburger #bar1, #bar2, #bar3 {
     height: 3px;
@@ -58,6 +59,7 @@ header .botoes a {
 }
 
 header a {
+    max-height: 100%;
     text-decoration: none;
 }
 
@@ -67,7 +69,21 @@ header .container .button {
     transition: 500ms background;
 }
 
+header .selected {
+    position: relative;
+    color: #092726;
+    padding: 29px;
+    transition: 500ms background;
+    font-weight: 500;
+}
+
 header .container .button:hover {
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.288)
+    );
+} 
+header .container .selected:hover {
     background: linear-gradient(
         transparent,
         rgba(0, 0, 0, 0.288)
