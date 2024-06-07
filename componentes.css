@@ -212,6 +212,12 @@ footer .box a:hover {
     background: #2BCCC4;
 }
 
+#sair {
+    font-size: 2rem;
+    gap: 1rem;
+    align-items: center;
+}
+
 /* conteúdo adm */
 .conteudo-adm {
     width: 100%;
