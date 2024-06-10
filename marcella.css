@@ -57,6 +57,7 @@ hr{
 .pessoas{
     display:flex;
     margin-top: 100px;
+    text-decoration: none;
 }
 
 .calendario{

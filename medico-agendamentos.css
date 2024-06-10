@@ -8,6 +8,7 @@
     width: 550px;
     height: 100vh;
     background-color: #75ACAE;
+    
 }
 
 #apresentacao{
@@ -16,6 +17,7 @@
     margin-top: 15px;
     margin-left: 40px;
     color: #fff;
+    
 }
 
 .itens1{
@@ -26,7 +28,6 @@
 
 #calendario{
     display: flex;
-    
 }
 
 #data{
@@ -34,6 +35,7 @@
     margin-top: 25px;
     margin-left: 50px;
     color: #fff;
+
 }
 
 #relogio{
@@ -46,13 +48,13 @@
     margin-top: 25px;
     margin-left: 50px;
     color: #fff;
+
 }
 
 hr{
     width: 150%;
     margin-top: 20px;
-    margin-left: -51px;
-    
+    margin-left: -51px;  
 }
 
 .pessoas{
@@ -72,6 +74,7 @@ hr{
     margin-top: 45px;
     margin-left: 50px;
     color: #fff;
+
 }
 
 #legenda2{
@@ -79,6 +82,7 @@ hr{
     margin-top: 45px;
     margin-left: 30px;
     color: #fff;
+
 }
 
 #circulo{
@@ -102,6 +106,7 @@ hr{
    margin-top: 870px;
    margin-left: 20px;
    text-decoration: none;
+
 }
 
 #legenda3{
@@ -109,6 +114,7 @@ hr{
     margin-top: 3px;
     margin-left: 15px;
     color: #fff;
+
 }
 
 body{
@@ -131,78 +137,114 @@ body{
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.200)
+    background-color: rgba(0, 0, 0, 0.199);
+   
 }
 
 #informacoes{
     width: 120vh;
     height: 85vh;
     background-color: #fff;
-    
-    
-}
-
-.quadro{
-    width: 80vh;
-    height: 90vh;
-    background-color: #fff;
-    display: flex;
-    
+    z-index: 1;
+    display: flex; 
+    justify-content: center;
     align-items: center;
-    flex-flow: column;
-    gap: 3vh;
-    z-index: 2;
-
 }
 
-.paciente1{
-    width: 70vh;
-    height: 13vh;
-    background-color: #D8F4EB;
-    border-radius: 1.8vh;
+.escolha{
     display: flex;
-    justify-content: space-around;
-    margin-top: 3vh;
-    color: black;
-    z-index: 3;
+    justify-content: center;
+    margin-top: 350px;
 }
 
-#nome, #serviço, #quando{
+#legenda4{
+    font-size: 6vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(0, 0, 0, 0.432);
+}
+
+
+.calendario-agendamento {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- 
+    align-items: center;
+    margin: 3rem;
 }
-
-#t{
-    font-weight: 700;
+#mes {
+    font-size: 1.4rem;
 }
-
-.paciente2{
-    width: 70vh;
-    height: 13vh;
-    background-color: #D8F4EB;
-    border-radius: 1.8vh;
+#datas {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+#datas > * {
     display: flex;
-    justify-content: space-around;
-    color: black;
-    z-index: 3;
+    justify-content:center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    aspect-ratio: 1;
+}
+.dias-semana {
+    user-select: none;
+}
+.dias {
+    --tamanho-dias: 4rem;
+    height: var(--tamanho-dias);
+
+    transition: background ease-in 150ms;
+}
+.dias:hover {
+    background: #98E2E1;
+    cursor: pointer;
 }
 
-.paciente3{
-    width: 70vh;
-    height: 13vh;
-    background-color: #D8F4EB;
-    border-radius: 1.8vh;
-    display: flex;
-    justify-content: space-around;
-    color: black;
-    z-index: 3;
-
+#dia-25 {
+    border: none;
+    background: #00B6AB;
+    position: relative;
 }
 
-.paciente1:hover, .paciente2:hover, .paciente3:hover{
-    background-color: #c6e4db;
+#label-detalhes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#click-detalhes {
+    appearance: none;
+    width: 100%;
+    height: 100%;
+}
+#detalhes {
+    display: none;
+    position: absolute;
+    color: white;
+    background: #00B6AB;
+    border-radius: 0.5rem;
+    font-size: 0.8;
+    text-wrap: nowrap;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 1rem;
+
+    translate: calc(52% + var(--tamanho-dias) / 2);
+}
+#detalhes > * {
+    margin-block: 0.125rem;
+}
+#linha-detalhes {
+    height: 1px;
+    background: white;
+}
+#detalhes :nth-child(6) {
+    font-weight: bold;
+    text-decoration-line: underline;
 }
 
+#label-detalhes:has(input:checked) + #detalhes {
+    display: block;
+}
