@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.esquerda{
+    position: relative;
+    width: 550px;
+    height: 100vh;
+    background-color: #75ACAE;
+    
+}
+
+#apresentacao{
+    position: absolute;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-left: 40px;
+    color: #fff;
+    
+}
+
+.itens1{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 50px;
+}
+
+#calendario{
+    display: flex;
+}
+
+#data{
+    font-size: 40px;
+    margin-top: 25px;
+    margin-left: 50px;
+    color: #fff;
+
+}
+
+#relogio{
+    display: flex;
+    margin-top: 20px;
+}
+
+#hora{
+    font-size: 40px;
+    margin-top: 25px;
+    margin-left: 50px;
+    color: #fff;
+
+}
+
+hr{
+    width: 150%;
+    margin-top: 20px;
+    margin-left: -51px;  
+}
+
+.pessoas{
+    display:flex;
+    margin-top: 100px;
+    text-decoration: none;
+}
+
+.calendario{
+    display: flex;
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+#legenda1{
+    font-size: 30px;
+    margin-top: 45px;
+    margin-left: 50px;
+    color: #fff;
+
+}
+
+#legenda2{
+    font-size: 30px;
+    margin-top: 45px;
+    margin-left: 30px;
+    color: #fff;
+
+}
+
+#circulo{
+    width: 130px;
+    height: 130px;
+    background-color: rgb(66, 131, 131);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ft2{
+    width: 90px;
+    height: 90px;
+}
+
+.sair{
+   position: absolute;
+   display: flex;
+   margin-top: 870px;
+   margin-left: 20px;
+   text-decoration: none;
+
+}
+
+#legenda3{
+    font-size: 30px;
+    margin-top: 3px;
+    margin-left: 15px;
+    color: #fff;
+
+}
+
+body{
+    display: flex;
+}
+
+.direita{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.escuro{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.199);
+   
+}
+
+#informacoes{
+    width: 120vh;
+    height: 85vh;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.escolha{
+    display: flex;
+    justify-content: center;
+    margin-top: 350px;
+}
+
+#legenda4{
+    font-size: 6vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(0, 0, 0, 0.432);
+}

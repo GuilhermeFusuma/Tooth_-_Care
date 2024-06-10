@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.esquerda{
+    position: relative;
+    width: 550px;
+    height: 100vh;
+    background-color: #75ACAE;
+}
+
+#apresentacao{
+    position: absolute;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-left: 40px;
+    color: #fff;
+}
+
+.itens1{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 50px;
+}
+
+#calendario{
+    display: flex;
+}
+
+#data{
+    font-size: 40px;
+    margin-top: 25px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+#relogio{
+    display: flex;
+    margin-top: 20px;
+}
+
+#hora{
+    font-size: 40px;
+    margin-top: 25px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+hr{
+    width: 150%;
+    margin-top: 20px;
+    margin-left: -51px;
+    
+}
+
+.pessoas{
+    display:flex;
+    margin-top: 100px;
+}
+
+.calendario{
+    display: flex;
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+#legenda1{
+    font-size: 30px;
+    margin-top: 45px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+#legenda2{
+    font-size: 30px;
+    margin-top: 45px;
+    margin-left: 30px;
+    color: #fff;
+}
+
+#circulo{
+    width: 130px;
+    height: 130px;
+    background-color: rgb(66, 131, 131);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ft2{
+    width: 90px;
+    height: 90px;
+}
+
+.sair{
+   position: absolute;
+   display: flex;
+   margin-top: 870px;
+   margin-left: 20px;
+   text-decoration: none;
+}
+
+#legenda3{
+    font-size: 30px;
+    margin-top: 3px;
+    margin-left: 15px;
+    color: #fff;
+}
+
+body{
+    display: flex;
+}
+
+.direita{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.escuro{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.199);
+   
+}
+
+#informacoes{
+    width: 120vh;
+    height: 85vh;
+    background-color: #fff;
+    z-index: 1;
+    
+}
+
+
+.paciente1{
+    position: relative;
+    width: 100vh;
+    height: 18vh;
+    background-color: #D8F4EB;
+    border-radius: 5vh;
+    margin-top: 6vh;
+    margin-left: 10vh;
+}
+
+#paciente{
+    position: absolute;
+    font-size: 3.5vh;
+    margin-left: 2.5vh;
+    margin-top: 0.5vh;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.titulos{
+    position: absolute;
+    font-size: 2.5vh;
+    display: flex;
+    column-gap:35vh;
+    margin-top: 6vh;
+    margin-left: 3vh;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.inserida{
+    position: absolute;
+    margin-top: 10.5vh;
+    margin-left: 3vh;
+    font-size: 2vh;
+    display: flex;
+    column-gap: 22vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.paciente2{
+    width: 100vh;
+    height: 18vh;
+    background-color: #D8F4EB;
+    border-radius: 2vh;
+    margin-left: 10vh;
+    margin-top: 8vh;
+}
+
+.paciente3{
+    width: 100vh;
+    height: 18vh;
+    background-color: #D8F4EB;
+    border-radius: 5vh;
+    margin-left: 10vh;
+    margin-top: 8vh;
+
+}
+
+.quadro1{
+    width: 118vh;
+    height: 58vh;
+    background-color: #ffffff;
+    z-index: 1;
+    margin-top: -25vh;
+    margin-left: -10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.verde{
+    width: 115vh;
+    height: 55vh;
+    background-color: #D8F4EB;
+}
+
+.info_paciente{
+    position: relative;
+    width: 100vh;
+    height: 15vh;
+    background-color: #2BCCC4;
+    margin-top: 4vh;
+    margin-left: 7.5vh;
+    display: flex;
+}
+
+#icon{
+    width: 12vh;
+    height: 12vh;
+    margin-top: 2vh;
+    margin-left: 2.5vh;
+    
+}
+
+.informações_do_paciente{
+    margin-top: 4.5vh;
+    margin-left: 2vh;
+    display: grid;
+    height: 1vh;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 2vh;
+}
+
+.informações_do_paciente2{
+    margin-top: 4.5vh;
+    margin-left: 15vh;
+    display: grid;
+    height: 1vh;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 2vh;
+}
+#titulo{
+    position: absolute;
+    font-size: 2.5vh;
+    margin-top: -3.5vh;
+    margin-left: 1vh;
+}
+
+.info_consulta{
+    width: 100vh;
+    height: 25vh;
+    background-color: #2BCCC4;
+    margin-left: 7.5vh;
+    margin-top: 6vh;
+    display: flex;
+    gap: 15vh;
+     
+}
+
+.consulta1_{
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 2vh;
+    margin-top: 4vh;
+    margin-left: 7vh;
+    display: grid;
+    height: 12vh;
+}
+
+.consulta2_{
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 2vh;
+    margin-top: 4vh;
+    display: grid;
+    height: 12vh;
+}
+
+.quadro2{
+    position: absolute;
+    width: 118vh;
+    height: 18vh;
+    background-color: #fff;
+    margin-top: 60vh;
+    margin-left: -10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.verde2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115vh;
+    height: 15vh;
+    background-color: #D8F4EB
+    
+}
+
+#diagnostico{
+    position: absolute;
+    margin-top: -12vh;
+    margin-left: -100vh;
+    font-weight: 600;
+    font-size: 1.8vh;
+
+}
+
+.quadro3{
+    width: 104vh;
+    height: 8vh;
+    background-color: #fff;
+    border: solid 0.16vh #000000;
+}
