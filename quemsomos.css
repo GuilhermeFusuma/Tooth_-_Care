@@ -9,6 +9,10 @@ body{
 .informacoes {
     width: 400px;
     height: fit-content;
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+    align-items: center;
     min-height: 600px;
     border-radius: 20%;
     background-color: #33A8A2;
@@ -32,6 +36,7 @@ body{
     flex-flow: column;
     align-items: center;
     margin-left: 10vh;
+    gap: 30px;
 }
 .faixa h4 {
     font-size: 2rem;

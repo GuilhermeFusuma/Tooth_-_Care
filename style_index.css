@@ -1,7 +1,7 @@
 /* checar overflow
          |
          V        */
-/*  * * * {
+ /* * * * {
     outline: rgba(255, 166, 0, 0.438) 4px solid;
 } */
 section {
@@ -51,7 +51,6 @@ section {
     position: absolute;
     inset: 0;
     background: #58d3cd48;
-    width: 100%;
     height: inherit;
     border-radius: 50px;
     z-index: -1;
@@ -88,8 +87,8 @@ section {
 }
 
 #segunda-secao .avaliacoes {
-    width: 100vw;
     display: flex;
+    max-width: 98vw;
     overflow-x: scroll;
     align-items: center;
     scroll-snap-type: x mandatory;
