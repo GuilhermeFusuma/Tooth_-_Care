@@ -23,7 +23,6 @@ section {
     background: linear-gradient(90deg, rgb(8, 17, 16) 0%, rgb(19, 65, 53) 70%, rgba(0,212,255,0) 80%);
 }
 #text-hero {
-    width: 100%;
     z-index: 5;
     color: white;
     font-size: 3rem;
@@ -35,14 +34,12 @@ section {
 }
 #hero-img {
     height: 100%;
-    width: 100%;
 }
 
 #bemvindo {
     /* outline: 3px solid orange; */
     display: flex;
     position: relative;
-    width: 99vw;
     justify-content: space-between;
     padding: 0.5% 2%;
 }
